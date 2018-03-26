@@ -133,7 +133,10 @@ wget https://repo.continuum.io/archive/Anaconda3-5.1.0-Linux-x86_64.sh
 bash Anaconda3-5.1.0-Linux-x86_64.sh
 # Select yes to all options during the setup process
 
-pip install tensorflow
+# install pytorch
+pip3 install http://download.pytorch.org/whl/cpu/torch-0.3.1-cp36-cp36m-linux_x86_64.whl 
+pip3 install torchvision
+
 ```
 
 ## Examples
