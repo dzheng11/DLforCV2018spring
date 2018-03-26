@@ -18,7 +18,9 @@ Settings:
 ##### Apply for GPU quota
 1. Link your billing account to the credit you received (If you use the $300 free trial credit in your account, you will not be able to use GPU)
 2. In the notifications on top right of your browser, click request increase
+![quota-request](https://lh4.googleusercontent.com/zAgJVQvSSSRoFBXHVgX0kvNU12MpHoGbHJD3ieAJ6-u-ibjGfAVFFIQOFpTy0vehwrOQUYRnrdIpcoLNGVv2tKFKudxy67kZerd5Nt-zmXBu5iWFKjcE34ApDgkJjpYeISt2t-JS)
 3. In the Quotas, find NVIDIA K80 GPUs for us-east1. Select it and click EDIT QUOTAS on top.
+![quota-request2](https://lh4.googleusercontent.com/bTBt3dg6Ylm0BbdwPHQV0FQS-htvqMkW_L3PpBn9xrr8d2ob1WP0VvlBQv-IrCMlqLjAU4D-cEc7T0Kf2WY0aZvnHk-5xlLsvwwK_xvuxmx-6RH9Umz5jnZ_bc9x9hXm94rpUsfX)
 4. Enter your information.
 5. Enter 1 in the limit
 6. In the description say you will use the gpu for Columbia CS 4995 Deep learning for Computer Vision Course Project
