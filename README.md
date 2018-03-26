@@ -94,7 +94,7 @@ source ~/.bashrc
 nvcc -V 
 
 # install cuDNN 
-# You need to register online and download the file to local file then upload to the cloud
+# You need to register online and download the file to local machine then upload to the cloud
 # https://developer.nvidia.com/cudnn
 # download the newest version for CUDA 9.0 and for Ubuntu 16.04. 
 sudo apt install ./libcudnn7_7.1.2.21-1+cuda9.0_amd64.deb 
@@ -110,6 +110,10 @@ pip3 install --upgrade tensorflow-gpu
 
 # keras
 pip3 install keras
+
+# pytorch
+pip3 install http://download.pytorch.org/whl/cu90/torch-0.3.1-cp35-cp35m-linux_x86_64.whl 
+pip3 install torchvision
 
 # helpful tools 
 # tmux: keep session in the background. Keep the session running even the ssh disconnects.
