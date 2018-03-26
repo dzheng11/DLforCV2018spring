@@ -27,6 +27,11 @@ Settings:
 ##### Connect to your VM
 1. Web terminal
 2. SSH
+  # generate a public private key pair. Use your uni for USERNAME. USERNAME will be used later.
+  ssh-keygen -t rsa -f ~/.ssh/[KEY_FILENAME] -C [USERNAME]
+  cat ~/.ssh/[KEY_FILENAME].pub
+  Save it to Metadata
+  ssh -i ~/.ssh/my-ssh-key [USERNAME]@[EXTERNAL_IP_ADDRESS]
 3. Cyberduck/WinSCP/Putty
 
 ##### Tensorflow with GPU
@@ -90,14 +95,9 @@ nvcc -V
 # download the newest version for CUDA 9.0 and for Ubuntu 16.04. 
 sudo apt install ./libcudnn7_7.1.2.21-1+cuda9.0_amd64.deb 
 
-# python tool
-sudo apt-get update && apt-get install -y python-numpy python-scipy python-nose python-h5py python-skimage python-matplotlib python-pandas python-sklearn python-sympy
-sudo apt-get clean && sudo apt-get autoremove
-sudo rm -rf /var/lib/apt/lists/*
-
 # install python stuff
 sudo apt-get update
-sudo apt-get install git python-dev python3-dev python-numpy python3-numpy build-essential python-pip python3-pip python-virtualenv swig python-wheel libcurl3-dev
+sudo apt-get install git python-dev python3-dev python3-numpy build-essential python-pip python3-pip python-virtualenv swig python-wheel libcurl3-dev
 sudo apt-get install -y libfreetype6-dev libpng12-dev
 pip3 install -U matplotlib ipython[all] jupyter pandas scikit-image
 
@@ -105,7 +105,7 @@ pip3 install -U matplotlib ipython[all] jupyter pandas scikit-image
 pip3 install --upgrade tensorflow-gpu
 
 # keras
-sudo pip3 install keras
+pip3 install keras
 
 # helpful tools 
 # tmux: keep session in the background. Keep the session running even the ssh disconnects.
@@ -123,8 +123,9 @@ In the future.
 ### Google Colabotory
 https://colab.research.google.com/notebooks/
 
+<hr>
 
-####  Remember to Stop the instance
-### Remember to Stop the instance
+###  Remember to Stop the instance
 ## Remember to Stop the instance
+# Remember to Stop the instance
 
