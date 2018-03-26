@@ -152,7 +152,7 @@ tensorboard --logdir=/tmp/tensorflow/mnist
 # close the terminal
 # open your browser, go to '[external id]: 6006', you should see the following
 ```
-![screenshot](Screenshot 2018-03-26 16.24.08.png)
+![screenshot](DLforCV2018spring/Screenshot 2018-03-26 16.24.08.png)
 
 
 
