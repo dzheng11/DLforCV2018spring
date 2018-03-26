@@ -152,7 +152,7 @@ tensorboard --logdir=/tmp/tensorflow/mnist
 # close the terminal
 # open your browser, go to '[external id]: 6006', you should see the following
 ```
-![screenshot](https://photos-3.dropbox.com/t/2/AADO9VwNK1YcUI5tOU_Q_tmDxlNJgJmzAUMDTcvTpZUUWQ/12/710983592/png/32x32/1/_/1/2/Screenshot%202018-03-26%2016.24.23.png/ELbUtu4FGLMMIAcoBw/DEtzSY9e2hNKMw2zs_Hbquhzm3fxw4ndQK5rtP9bLgo?preserve_transparency=1&size=2048x1536&size_mode=3)
+![screenshot](Screenshot 2018-03-26 16.24.08.png)
 
 
 
