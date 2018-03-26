@@ -4,15 +4,16 @@
 #### VMs
 ##### Tensorflow with GPU
 ###### Set up environment from scratch
-``` bash
-'''
+
+```
 The following script helps you install all the dependencies for keras.
 We highly recommend that you run the following code, manually, line by line
 to avoid any problem.
 
-You need to run the code in order to avoid dependency issues.
-'''
+You need to run the code in the given order to avoid dependency issues.
+```
 
+```
 # essential
 sudo apt-get update
 sudo apt-get upgrade  
@@ -21,7 +22,6 @@ sudo apt-get install git pkg-config python-dev
 sudo apt-get install software-properties-common wget
 sudo apt-get autoremove 
 sudo rm -rf /var/lib/apt/lists/*
-
 
 # install driver
 sudo add-apt-repository ppa:graphics-drivers/ppa
@@ -68,7 +68,6 @@ sudo apt install ./libcudnn7_7.1.2.21-1+cuda9.0_amd64.deb
 sudo apt-get update && apt-get install -y python-numpy python-scipy python-nose python-h5py python-skimage python-matplotlib python-pandas python-sklearn python-sympy
 sudo apt-get clean && sudo apt-get autoremove
 sudo rm -rf /var/lib/apt/lists/*
-
 
 # install python stuff
 sudo apt-get update
