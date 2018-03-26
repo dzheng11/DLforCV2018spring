@@ -27,11 +27,13 @@ Settings:
 ##### Connect to your VM
 1. Web terminal
 2. SSH
-  # generate a public private key pair. Use your uni for USERNAME. USERNAME will be used later.
+  generate a public private key pair. Use your uni for USERNAME. USERNAME will be used later.
+  ```
   ssh-keygen -t rsa -f ~/.ssh/[KEY_FILENAME] -C [USERNAME]
   cat ~/.ssh/[KEY_FILENAME].pub
   Save it to Metadata
   ssh -i ~/.ssh/my-ssh-key [USERNAME]@[EXTERNAL_IP_ADDRESS]
+  ```
 3. Cyberduck/WinSCP/Putty
 
 ##### Tensorflow with GPU
