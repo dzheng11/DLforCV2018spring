@@ -110,6 +110,7 @@ sudo apt install ./libcudnn7_7.1.2.21-1+cuda9.0_amd64.deb
 sudo apt-get update
 sudo apt-get install git python-dev python3-dev python3-numpy build-essential python-pip python3-pip python-virtualenv swig python-wheel libcurl3-dev
 sudo apt-get install -y libfreetype6-dev libpng12-dev
+python3 -m pip install -U pip
 pip3 install -U matplotlib ipython[all] jupyter pandas scikit-image
 
 # install tensorflow
