@@ -142,7 +142,17 @@ git clone https://github.com/tensorflow/tensorflow.git
 # Mnist is chosen as demo
 cd tensorflow/tensorflow/examples/tutorials/mnist
 
-nphup python mnist_with_summaries.py --max_steps=1000000
+# run it in the background, output is stored in train.log
+nohup python mnist_with_summaries.py --max_steps=1000000 > train.log
+
+# close and open another terminal
+# run the tensorboard
+tensorboard --logdir=/tmp/tensorflow/mnist
+
+# close the terminal
+# open your browser, go to '[external id]: 6006', you should see the following
+
+
 ```
 
 <hr>
