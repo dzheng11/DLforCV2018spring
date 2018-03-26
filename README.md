@@ -174,7 +174,7 @@ nohup python mnist_with_summaries.py --max_steps=1000000 > train.log
 
 # close and open another terminal
 # run the tensorboard
-tensorboard --logdir=/tmp/tensorflow/mnist
+nohup tensorboard --logdir=/tmp/tensorflow/mnist
 ```
 
 - Close the terminal
