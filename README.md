@@ -47,6 +47,13 @@ We highly recommend that you run the following code, manually, line by line
 to avoid any problem.
 
 You need to run the code in the given order to avoid dependency issues.
+
+* Linux Essentials
+* Nvidia Driver
+* CUDA
+* cuDNN
+* Tensorflow
+* Keras
 ```
 
 ```
