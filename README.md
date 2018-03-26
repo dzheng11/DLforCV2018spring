@@ -183,6 +183,7 @@ nohup tensorboard --logdir=/tmp/tensorflow/mnist
 ([extenal id] could be found on the VM instance page)
 
 
+Reference: https://bicepjai.github.io/machine-learning/2016/08/22/tensorboard-on-gcloud.html
 
 
 
