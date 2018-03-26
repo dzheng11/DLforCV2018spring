@@ -110,7 +110,6 @@ sudo apt install ./libcudnn7_7.1.2.21-1+cuda9.0_amd64.deb
 sudo apt-get update
 sudo apt-get install git python-dev python3-dev python3-numpy build-essential python-pip python3-pip python-virtualenv swig python-wheel libcurl3-dev
 sudo apt-get install -y libfreetype6-dev libpng12-dev
-python3 -m pip install -U pip
 pip3 install -U matplotlib ipython[all] jupyter pandas scikit-image
 
 # install tensorflow
@@ -136,6 +135,33 @@ pip install tensorflow
 ```
 
 ## Examples
+- Go to google gloud console, go to 'VPC Network' panel, select 'Fire wall rules'. Add a rule as follows.
+```
+tensorboard
+
+Network
+default
+
+Priority
+1000
+
+Direction
+Ingress
+
+Action on match
+Allow
+
+Source filters
+IP ranges
+0.0.0.0/0
+
+Protocols and ports
+tcp:6006;udp:6006
+```
+
+- Then click your own instances, go to 'Edit', check box with 'Enable connecting to serial ports'
+
+- Run the following code in ssh
 ```
 # Get the code from tensorflow
 git clone https://github.com/tensorflow/tensorflow.git
@@ -149,10 +175,12 @@ nohup python mnist_with_summaries.py --max_steps=1000000 > train.log
 # close and open another terminal
 # run the tensorboard
 tensorboard --logdir=/tmp/tensorflow/mnist
-
-# close the terminal
-# open your browser, go to '[external id]: 6006', you should see the following
 ```
+
+- Close the terminal
+
+- Open your browser, go to '[external id]: 6006', you should see the tensorflow.
+([extenal id] could be found on the VM instance page)
 
 
 
