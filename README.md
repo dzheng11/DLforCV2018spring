@@ -15,7 +15,7 @@ Settings:
   - Boot disk type: Standard persistent disk
   - Size: 200 GB
 
-##### Apply for GPU quota
+##### Apply for GPU quota (Skip this part if you do not need one)
 1. Link your billing account to the credit you received (If you use the $300 free trial credit in your account, you will not be able to use GPU)
 2. In the notifications on top right of your browser, click request increase
 ![quota-request](https://lh4.googleusercontent.com/zAgJVQvSSSRoFBXHVgX0kvNU12MpHoGbHJD3ieAJ6-u-ibjGfAVFFIQOFpTy0vehwrOQUYRnrdIpcoLNGVv2tKFKudxy67kZerd5Nt-zmXBu5iWFKjcE34ApDgkJjpYeISt2t-JS)
@@ -133,10 +133,17 @@ wget https://repo.continuum.io/archive/Anaconda3-5.1.0-Linux-x86_64.sh
 bash Anaconda3-5.1.0-Linux-x86_64.sh
 pip install tensorflow
 ```
-#### ML engine
-In the future.
-### Google Colabotory
-https://colab.research.google.com/notebooks/
+
+## Examples
+```
+# Get the code from tensorflow
+git clone https://github.com/tensorflow/tensorflow.git
+
+# Mnist is chosen as demo
+cd tensorflow/tensorflow/examples/tutorials/mnist
+
+nphup python mnist_with_summaries.py --max_steps=1000000
+```
 
 <hr>
 
