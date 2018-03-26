@@ -151,11 +151,11 @@ tensorboard --logdir=/tmp/tensorflow/mnist
 
 # close the terminal
 # open your browser, go to '[external id]: 6006', you should see the following
-
+```
 ![screenshot](https://www.dropbox.com/s/fz8pgqbb62u9593/Screenshot%202018-03-26%2016.24.08.png?dl=0)
 ![screenshot2](https://www.dropbox.com/s/e2olhfjy6pmctks/Screenshot%202018-03-26%2016.24.23.png?dl=0)
 
-```
+
 
 <hr>
 
