@@ -87,8 +87,7 @@ nvcc -V
 # install cuDNN 
 # You need to register online and download the file to local file then upload to the cloud
 # https://developer.nvidia.com/cudnn
-# download the newest version for CUDA 9.0 and for Ubuntu 16.04.
-chmod +x libcudnn7_7.1.2.21-1+cuda9.0_amd64.deb 
+# download the newest version for CUDA 9.0 and for Ubuntu 16.04. 
 sudo apt install ./libcudnn7_7.1.2.21-1+cuda9.0_amd64.deb 
 
 # python tool
@@ -125,12 +124,7 @@ In the future.
 https://colab.research.google.com/notebooks/
 
 
-
-'''
-The following script helps you install all the dependencies for keras.
-We highly recommend that you run the following code, manually, line by line
-to avoid any problem.
-
-You need to run the code in order to avoid dependency issues.
-'''
+####  Remember to Stop the instance
+### Remember to Stop the instance
+## Remember to Stop the instance
 
