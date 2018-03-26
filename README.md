@@ -1,8 +1,7 @@
 # DLforCV cloud setting
-## Environments
-### Google Cloud instance
-#### VMs
-##### Create a VM instance using Google Cloud
+## Google Cloud instance
+### VMs
+#### Create a VM instance using Google Cloud
 Settings:
 * Zone: us-east1-d
 * Machine type: click customize
@@ -15,7 +14,7 @@ Settings:
   - Boot disk type: Standard persistent disk
   - Size: 200 GB
 
-##### Apply for GPU quota (Skip this part if you do not need one)
+#### Apply for GPU quota (Skip this part if you do not need one)
 1. Link your billing account to the credit you received (If you use the $300 free trial credit in your account, you will not be able to use GPU)
 2. In the notifications on top right of your browser, click request increase
 ![quota-request](https://lh4.googleusercontent.com/zAgJVQvSSSRoFBXHVgX0kvNU12MpHoGbHJD3ieAJ6-u-ibjGfAVFFIQOFpTy0vehwrOQUYRnrdIpcoLNGVv2tKFKudxy67kZerd5Nt-zmXBu5iWFKjcE34ApDgkJjpYeISt2t-JS)
@@ -25,8 +24,7 @@ Settings:
 5. Enter 1 in the limit
 6. In the description say you will use the gpu for Columbia CS 4995 Deep learning for Computer Vision Course Project
 7. The quota will be approved almost instantaneously
-
-##### Connect to your VM
+### Connect to VMs
 1. Web terminal
 2. SSH
   generate a public private key pair. Use your uni for USERNAME. USERNAME will be used later.
@@ -38,9 +36,9 @@ Settings:
   ```
 3. Cyberduck/WinSCP/Putty
 
-##### Tensorflow with GPU
-###### Set up environment from scratch
-
+## Environments
+**Either with or without GPU is ok. But it is usually trained faster on instances with GPU. Choose as you like.**
+### Instances with GPU
 ```
 The following script helps you install all the dependencies for keras.
 We highly recommend that you run the following code, manually, line by line
@@ -128,10 +126,13 @@ pip3 install torchvision
 # nohup: similar to tmux. Keep things running. Log the output to nohup.log
 ```
 
-##### Tensorflow without GPU
+### Instances without GPU
 ```
 wget https://repo.continuum.io/archive/Anaconda3-5.1.0-Linux-x86_64.sh
+
 bash Anaconda3-5.1.0-Linux-x86_64.sh
+# Select yes all the during the setup process
+
 pip install tensorflow
 ```
 
