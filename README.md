@@ -131,7 +131,7 @@ pip3 install torchvision
 wget https://repo.continuum.io/archive/Anaconda3-5.1.0-Linux-x86_64.sh
 
 bash Anaconda3-5.1.0-Linux-x86_64.sh
-# Select yes all the during the setup process
+# Select yes to all options during the setup process
 
 pip install tensorflow
 ```
