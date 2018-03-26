@@ -1,7 +1,34 @@
-# DLfotCV cloud setting
+# DLforCV cloud setting
 ## Environments
 ### Google Cloud instance
 #### VMs
+##### Create a VM instance using Google Cloud
+Settings:
+* Zone: us-east1-d
+* Machine type: click customize
+  - 8 vCPU
+  - 30 GB Memory
+  - CPU platform: Intel Haswell or later
+  - GPU: 1 NVIDIA Tesla K80
+* Boot disk:
+  - OS images: Ubuntu 16.04 LTS
+  - Boot disk type: Standard persistent disk
+  - Size: 200 GB
+
+##### Apply for GPU quota
+1. Link your billing account to the credit you received (If you use the $300 free trial credit in your account, you will not be able to use GPU)
+2. In the notifications on top right of your browser, click request increase
+3. In the Quotas, find NVIDIA K80 GPUs for us-east1. Select it and click EDIT QUOTAS on top.
+4. Enter your information.
+5. Enter 1 in the limit
+6. In the description say you will use the gpu for Columbia CS 4995 Deep learning for Computer Vision Course Project
+7. The quota will be approved almost instantaneously
+
+##### Connect to your VM
+1. Web terminal
+2. SSH
+3. Cyberduck/WinSCP/Putty
+
 ##### Tensorflow with GPU
 ###### Set up environment from scratch
 
