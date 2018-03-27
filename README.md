@@ -93,6 +93,7 @@ Executing cuda installation
 # change environment for cuda
 echo 'export PATH=/usr/local/cuda-9.0/bin:$PATH' >> ~/.bashrc
 echo 'export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64:$LD_LIBRARY_PATH' >> ~/.bashrc
+echo 'export LD_LIBRARY_PATH=/usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH' >> ~/.bashrc
 source ~/.bashrc 
 
 #verify your cuda is installed correctly
