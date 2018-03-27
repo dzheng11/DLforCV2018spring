@@ -175,7 +175,7 @@ git clone https://github.com/tensorflow/tensorflow.git
 cd tensorflow/tensorflow/examples/tutorials/mnist
 
 # run it in the background, output is stored in train.log
-nohup python mnist_with_summaries.py --max_steps=1000000 > train.log
+nohup python3 mnist_with_summaries.py --max_steps=1000000 > train.log
 
 # close and open another terminal
 # run the tensorboard
