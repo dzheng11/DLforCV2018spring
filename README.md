@@ -191,6 +191,10 @@ nohup tensorboard --logdir=/tmp/tensorflow/mnist
 Reference: https://bicepjai.github.io/machine-learning/2016/08/22/tensorboard-on-gcloud.html
 
 
+## Running Jupyter Notebook Remotely
+
+See this link.
+https://towardsdatascience.com/running-jupyter-notebook-in-google-cloud-platform-in-15-min-61e16da34d52
 
 <hr>
 
