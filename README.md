@@ -1,3 +1,12 @@
+# Important Update
+For cuDNN, please use cuDNN v7.0.5 or v7.0.4 instead of cuDNN 7.1. cuDNN 7.1 is not compatible with tensorflow and will cause issue.
+If you've installed cnDNN 7.1, you can use 
+```
+sudo apt-get remove libcudnn7
+```
+to remove it. Then follow the same instruction to install cuDNN 7.0.
+Sorry for all the trouble it may cause.
+
 # DLforCV cloud setting
 ## Google Cloud instance
 ### VMs
