@@ -102,8 +102,8 @@ nvcc -V
 # install cuDNN 
 # You need to register online and download the file to local machine then upload to the cloud
 # https://developer.nvidia.com/cudnn
-# download the newest version for CUDA 9.0 and for Ubuntu 16.04. 
-sudo apt install ./libcudnn7_7.1.2.21-1+cuda9.0_amd64.deb 
+# download the cuDNN 7.0 for CUDA 9.0 and for Ubuntu 16.04. 
+sudo apt install ./(your cuDNN file)
 
 # install python stuff
 sudo apt-get update
