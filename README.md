@@ -203,6 +203,9 @@ Reference: https://bicepjai.github.io/machine-learning/2016/08/22/tensorboard-on
 
 ## Running Jupyter Notebook Remotely
 
+### [Notice]
+A couple of students informed us that after going through the tutorial shown below, they have issue with tensorflow-gpu. After inspection, the problem is due to the outdated Anaconda installed in the tutorial. When installing the Anaconda, make sure you install the newest Anaconda listed on the official website.
+
 See this link.
 https://towardsdatascience.com/running-jupyter-notebook-in-google-cloud-platform-in-15-min-61e16da34d52
 
